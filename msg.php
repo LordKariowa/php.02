@@ -8,15 +8,12 @@
 <body>
     <?php include 'header.php'; ?>
     <div class="container">
-        <h2>Painel do Sistema</h2>
-        <hr>
-        <h4>Menu</h4>
-        <nav>
-            <ul>
-                <li><a href="cadastrar.php">Cadastro de Clientes</a></li>
-                <li><a href="consultar.php">Consulta de Clientes</a></li>
-            </ul>
-        </nav>
+      <?php $msg = $_GET["msg"]; ?>
+      <div class="alert-primary" role= "alert">
+          <?php echo $msg; ?>
+      </div>  
+      <br>
+        <a href="index.php">Voltar</a>
     </div>
 </body>
 </html>
